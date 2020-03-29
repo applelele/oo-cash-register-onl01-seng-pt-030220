@@ -46,10 +46,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    last_transaction_total = self.add_item
-    new_total = @total -= add_item(price).last
-    new_cart = @title.pop
-    # @@cart = @@cart.clear
+
   end
 
 end
