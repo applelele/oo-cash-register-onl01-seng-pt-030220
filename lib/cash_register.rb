@@ -18,8 +18,10 @@ class CashRegister
     # item_info[:price] = price
     # item_info[:quantity] = quantity
     # cart << item_info
+    @price = price
+    @quantity = quantity
 
-    @total += price * quantity
+    @total += @price * @quantity
 
     if quantity > 1
         quantity.times do
